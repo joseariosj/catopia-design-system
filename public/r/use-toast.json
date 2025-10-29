@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "use-toast",
+  "type": "registry:ui",
+  "title": "use-toast",
+  "description": "Hook for toast notifications.",
+  "dependencies": [],
+  "files": [
+    {
+      "path": "src/registry/default/ui/use-toast.ts",
+      "content": "import { useToast, toast } from \"@/hooks/use-toast\";\n\nexport { useToast, toast };\n",
+      "type": "registry:ui"
+    }
+  ]
+}

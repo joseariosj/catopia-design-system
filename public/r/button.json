@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "button",
+  "type": "registry:ui",
+  "title": "Button",
+  "description": "Displays a button or a component that looks like a button.",
+  "dependencies": [
+    "@radix-ui/react-slot"
+  ],
+  "files": [
+    {
+      "path": "src/registry/default/ui/button.tsx",
+      "content": "import * as React from \"react\";\nimport { Slot } from \"@radix-ui/react-slot\";\nimport { cva, type VariantProps } from \"class-variance-authority\";\n\nimport { cn } from \"@/lib/utils\";\n\nconst buttonVariants = cva(\n  \"inline-flex items-center justify-center gap-2 whitespace-nowrap text-base font-bold ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0\",\n  {\n    variants: {\n      variant: {\n        default: \"bg-accent text-accent-foreground rounded-full border-2 border-border shadow-brutal hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-none\",\n        destructive: \"bg-destructive text-destructive-foreground rounded-full border-2 border-border shadow-brutal hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-none\",\n        outline: \"border-2 border-border bg-transparent rounded-full shadow-brutal hover:bg-accent/10 hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-none\",\n        secondary: \"bg-gray-50 text-foreground rounded-full border-2 border-border shadow-brutal hover:bg-gray-100 hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-none\",\n        ghost: \"hover:bg-accent/10 rounded-full\",\n        link: \"text-primary underline-offset-4 hover:underline\",\n      },\n      size: {\n        default: \"h-10 px-4 py-2\",\n        sm: \"h-9 px-3\",\n        lg: \"h-14 px-8 py-5 text-xl\",\n        icon: \"h-10 w-10\",\n      },\n    },\n    defaultVariants: {\n      variant: \"default\",\n      size: \"default\",\n    },\n  },\n);\n\nexport interface ButtonProps\n  extends React.ButtonHTMLAttributes<HTMLButtonElement>,\n    VariantProps<typeof buttonVariants> {\n  asChild?: boolean;\n}\n\nconst Button = React.forwardRef<HTMLButtonElement, ButtonProps>(\n  ({ className, variant, size, asChild = false, ...props }, ref) => {\n    const Comp = asChild ? Slot : \"button\";\n    return <Comp className={cn(buttonVariants({ variant, size, className }))} ref={ref} {...props} />;\n  },\n);\nButton.displayName = \"Button\";\n\nexport { Button, buttonVariants };\n",
+      "type": "registry:ui"
+    }
+  ]
+}

@@ -1,0 +1,644 @@
+{
+    "$schema": "https://ui.shadcn.com/schema.json",
+    "name": "catlife-components",
+    "homepage": "https://catlife.com.br",
+    "items": [
+        {
+            "name": "accordion",
+            "type": "registry:ui",
+            "title": "Accordion",
+            "description": "A collapsible content container.",
+            "files": [
+                {
+                    "path": "src/registry/default/ui/accordion.tsx",
+                    "type": "registry:ui"
+                }
+            ],
+            "dependencies": ["@radix-ui/react-accordion", "lucide-react"]
+        },
+        {
+            "name": "alert",
+            "type": "registry:ui",
+            "title": "Alert",
+            "description": "Displays a callout for user attention.",
+            "files": [
+                {
+                    "path": "src/registry/default/ui/alert.tsx",
+                    "type": "registry:ui"
+                }
+            ],
+            "dependencies": []
+        },
+        {
+            "name": "alert-dialog",
+            "type": "registry:ui",
+            "title": "Alert Dialog",
+            "description": "A modal dialog that interrupts the user with important content.",
+            "files": [
+                {
+                    "path": "src/registry/default/ui/alert-dialog.tsx",
+                    "type": "registry:ui"
+                }
+            ],
+            "dependencies": ["@radix-ui/react-alert-dialog"]
+        },
+        {
+            "name": "aspect-ratio",
+            "type": "registry:ui",
+            "title": "Aspect Ratio",
+            "description": "Displays content within a desired ratio.",
+            "files": [
+                {
+                    "path": "src/registry/default/ui/aspect-ratio.tsx",
+                    "type": "registry:ui"
+                }
+            ],
+            "dependencies": ["@radix-ui/react-aspect-ratio"]
+        },
+        {
+            "name": "avatar",
+            "type": "registry:ui",
+            "title": "Avatar",
+            "description": "An image element with a fallback for representing the user.",
+            "files": [
+                {
+                    "path": "src/registry/default/ui/avatar.tsx",
+                    "type": "registry:ui"
+                }
+            ],
+            "dependencies": ["@radix-ui/react-avatar"]
+        },
+        {
+            "name": "badge",
+            "type": "registry:ui",
+            "title": "Badge",
+            "description": "Displays a badge or a component that looks like a badge.",
+            "files": [
+                {
+                    "path": "src/registry/default/ui/badge.tsx",
+                    "type": "registry:ui"
+                }
+            ],
+            "dependencies": []
+        },
+        {
+            "name": "breadcrumb",
+            "type": "registry:ui",
+            "title": "Breadcrumb",
+            "description": "Displays the path to the current resource using a hierarchy of links.",
+            "files": [
+                {
+                    "path": "src/registry/default/ui/breadcrumb.tsx",
+                    "type": "registry:ui"
+                }
+            ],
+            "dependencies": ["@radix-ui/react-slot", "lucide-react"]
+        },
+        {
+            "name": "button",
+            "type": "registry:ui",
+            "title": "Button",
+            "description": "Displays a button or a component that looks like a button.",
+            "files": [
+                {
+                    "path": "src/registry/default/ui/button.tsx",
+                    "type": "registry:ui"
+                }
+            ],
+            "dependencies": ["@radix-ui/react-slot"]
+        },
+        {
+            "name": "calendar",
+            "type": "registry:ui",
+            "title": "Calendar",
+            "description": "A date field component that allows users to enter and edit date.",
+            "files": [
+                {
+                    "path": "src/registry/default/ui/calendar.tsx",
+                    "type": "registry:ui"
+                }
+            ],
+            "dependencies": ["react-day-picker", "lucide-react"]
+        },
+        {
+            "name": "card",
+            "type": "registry:ui",
+            "title": "Card",
+            "description": "Displays a card with header, content, and footer.",
+            "files": [
+                {
+                    "path": "src/registry/default/ui/card.tsx",
+                    "type": "registry:ui"
+                }
+            ],
+            "dependencies": []
+        },
+        {
+            "name": "carousel",
+            "type": "registry:ui",
+            "title": "Carousel",
+            "description": "A carousel with motion and swipe built using Embla.",
+            "files": [
+                {
+                    "path": "src/registry/default/ui/carousel.tsx",
+                    "type": "registry:ui"
+                }
+            ],
+            "dependencies": ["embla-carousel-react", "lucide-react"]
+        },
+        {
+            "name": "chart",
+            "type": "registry:ui",
+            "title": "Chart",
+            "description": "Beautiful charts built using Recharts.",
+            "files": [
+                {
+                    "path": "src/registry/default/ui/chart.tsx",
+                    "type": "registry:ui"
+                }
+            ],
+            "dependencies": ["recharts"]
+        },
+        {
+            "name": "checkbox",
+            "type": "registry:ui",
+            "title": "Checkbox",
+            "description": "A control that allows the user to toggle between checked and not checked.",
+            "files": [
+                {
+                    "path": "src/registry/default/ui/checkbox.tsx",
+                    "type": "registry:ui"
+                }
+            ],
+            "dependencies": ["@radix-ui/react-checkbox", "lucide-react"]
+        },
+        {
+            "name": "collapsible",
+            "type": "registry:ui",
+            "title": "Collapsible",
+            "description": "An interactive component which expands/collapses a panel.",
+            "files": [
+                {
+                    "path": "src/registry/default/ui/collapsible.tsx",
+                    "type": "registry:ui"
+                }
+            ],
+            "dependencies": ["@radix-ui/react-collapsible"]
+        },
+        {
+            "name": "command",
+            "type": "registry:ui",
+            "title": "Command",
+            "description": "Fast, composable, unstyled command menu for React.",
+            "files": [
+                {
+                    "path": "src/registry/default/ui/command.tsx",
+                    "type": "registry:ui"
+                }
+            ],
+            "dependencies": ["cmdk", "lucide-react"]
+        },
+        {
+            "name": "context-menu",
+            "type": "registry:ui",
+            "title": "Context Menu",
+            "description": "Displays a menu to the user — such as a set of actions or functions — triggered by a button.",
+            "files": [
+                {
+                    "path": "src/registry/default/ui/context-menu.tsx",
+                    "type": "registry:ui"
+                }
+            ],
+            "dependencies": ["@radix-ui/react-context-menu", "lucide-react"]
+        },
+        {
+            "name": "dialog",
+            "type": "registry:ui",
+            "title": "Dialog",
+            "description": "A window overlaid on either the primary window or another dialog window.",
+            "files": [
+                {
+                    "path": "src/registry/default/ui/dialog.tsx",
+                    "type": "registry:ui"
+                }
+            ],
+            "dependencies": ["@radix-ui/react-dialog", "lucide-react"]
+        },
+        {
+            "name": "drawer",
+            "type": "registry:ui",
+            "title": "Drawer",
+            "description": "A drawer component for React.",
+            "files": [
+                {
+                    "path": "src/registry/default/ui/drawer.tsx",
+                    "type": "registry:ui"
+                }
+            ],
+            "dependencies": ["vaul"]
+        },
+        {
+            "name": "dropdown-menu",
+            "type": "registry:ui",
+            "title": "Dropdown Menu",
+            "description": "Displays a menu to the user — such as a set of actions or functions — triggered by a button.",
+            "files": [
+                {
+                    "path": "src/registry/default/ui/dropdown-menu.tsx",
+                    "type": "registry:ui"
+                }
+            ],
+            "dependencies": ["@radix-ui/react-dropdown-menu", "lucide-react"]
+        },
+        {
+            "name": "form",
+            "type": "registry:ui",
+            "title": "Form",
+            "description": "Building forms with React Hook Form and Zod.",
+            "files": [
+                {
+                    "path": "src/registry/default/ui/form.tsx",
+                    "type": "registry:ui"
+                }
+            ],
+            "dependencies": ["@radix-ui/react-label", "@radix-ui/react-slot", "react-hook-form"]
+        },
+        {
+            "name": "hover-card",
+            "type": "registry:ui",
+            "title": "Hover Card",
+            "description": "For sighted users to preview content available behind a link.",
+            "files": [
+                {
+                    "path": "src/registry/default/ui/hover-card.tsx",
+                    "type": "registry:ui"
+                }
+            ],
+            "dependencies": ["@radix-ui/react-hover-card"]
+        },
+        {
+            "name": "input",
+            "type": "registry:ui",
+            "title": "Input",
+            "description": "Displays a form input field or a component that looks like an input field.",
+            "files": [
+                {
+                    "path": "src/registry/default/ui/input.tsx",
+                    "type": "registry:ui"
+                }
+            ],
+            "dependencies": []
+        },
+        {
+            "name": "input-otp",
+            "type": "registry:ui",
+            "title": "Input OTP",
+            "description": "Accessible one-time password component with copy paste functionality.",
+            "files": [
+                {
+                    "path": "src/registry/default/ui/input-otp.tsx",
+                    "type": "registry:ui"
+                }
+            ],
+            "dependencies": ["input-otp", "lucide-react"]
+        },
+        {
+            "name": "label",
+            "type": "registry:ui",
+            "title": "Label",
+            "description": "Renders an accessible label associated with controls.",
+            "files": [
+                {
+                    "path": "src/registry/default/ui/label.tsx",
+                    "type": "registry:ui"
+                }
+            ],
+            "dependencies": ["@radix-ui/react-label"]
+        },
+        {
+            "name": "menubar",
+            "type": "registry:ui",
+            "title": "Menubar",
+            "description": "A visually persistent menu common in desktop applications.",
+            "files": [
+                {
+                    "path": "src/registry/default/ui/menubar.tsx",
+                    "type": "registry:ui"
+                }
+            ],
+            "dependencies": ["@radix-ui/react-menubar", "lucide-react"]
+        },
+        {
+            "name": "navigation-menu",
+            "type": "registry:ui",
+            "title": "Navigation Menu",
+            "description": "A collection of links for navigating websites.",
+            "files": [
+                {
+                    "path": "src/registry/default/ui/navigation-menu.tsx",
+                    "type": "registry:ui"
+                }
+            ],
+            "dependencies": ["@radix-ui/react-navigation-menu", "lucide-react"]
+        },
+        {
+            "name": "pagination",
+            "type": "registry:ui",
+            "title": "Pagination",
+            "description": "Pagination with page navigation, next and previous links.",
+            "files": [
+                {
+                    "path": "src/registry/default/ui/pagination.tsx",
+                    "type": "registry:ui"
+                }
+            ],
+            "dependencies": ["lucide-react"]
+        },
+        {
+            "name": "popover",
+            "type": "registry:ui",
+            "title": "Popover",
+            "description": "Displays rich content in a portal, triggered by a button.",
+            "files": [
+                {
+                    "path": "src/registry/default/ui/popover.tsx",
+                    "type": "registry:ui"
+                }
+            ],
+            "dependencies": ["@radix-ui/react-popover"]
+        },
+        {
+            "name": "progress",
+            "type": "registry:ui",
+            "title": "Progress",
+            "description": "Displays an indicator showing the completion progress of a task.",
+            "files": [
+                {
+                    "path": "src/registry/default/ui/progress.tsx",
+                    "type": "registry:ui"
+                }
+            ],
+            "dependencies": ["@radix-ui/react-progress"]
+        },
+        {
+            "name": "radio-group",
+            "type": "registry:ui",
+            "title": "Radio Group",
+            "description": "A set of checkable buttons—known as radio buttons—where no more than one of the buttons can be checked at a time.",
+            "files": [
+                {
+                    "path": "src/registry/default/ui/radio-group.tsx",
+                    "type": "registry:ui"
+                }
+            ],
+            "dependencies": ["@radix-ui/react-radio-group", "lucide-react"]
+        },
+        {
+            "name": "resizable",
+            "type": "registry:ui",
+            "title": "Resizable",
+            "description": "Accessible resizable panel groups and layouts with keyboard support.",
+            "files": [
+                {
+                    "path": "src/registry/default/ui/resizable.tsx",
+                    "type": "registry:ui"
+                }
+            ],
+            "dependencies": ["react-resizable-panels", "lucide-react"]
+        },
+        {
+            "name": "scroll-area",
+            "type": "registry:ui",
+            "title": "Scroll Area",
+            "description": "Augments native scroll functionality for custom, cross-browser styling.",
+            "files": [
+                {
+                    "path": "src/registry/default/ui/scroll-area.tsx",
+                    "type": "registry:ui"
+                }
+            ],
+            "dependencies": ["@radix-ui/react-scroll-area"]
+        },
+        {
+            "name": "select",
+            "type": "registry:ui",
+            "title": "Select",
+            "description": "Displays a list of options for the user to pick from—triggered by a button.",
+            "files": [
+                {
+                    "path": "src/registry/default/ui/select.tsx",
+                    "type": "registry:ui"
+                }
+            ],
+            "dependencies": ["@radix-ui/react-select", "lucide-react"]
+        },
+        {
+            "name": "separator",
+            "type": "registry:ui",
+            "title": "Separator",
+            "description": "Visually or semantically separates content.",
+            "files": [
+                {
+                    "path": "src/registry/default/ui/separator.tsx",
+                    "type": "registry:ui"
+                }
+            ],
+            "dependencies": ["@radix-ui/react-separator"]
+        },
+        {
+            "name": "sheet",
+            "type": "registry:ui",
+            "title": "Sheet",
+            "description": "Extends the Dialog component to display content that complements the main content of the screen.",
+            "files": [
+                {
+                    "path": "src/registry/default/ui/sheet.tsx",
+                    "type": "registry:ui"
+                }
+            ],
+            "dependencies": ["@radix-ui/react-dialog", "lucide-react"]
+        },
+        {
+            "name": "sidebar",
+            "type": "registry:ui",
+            "title": "Sidebar",
+            "description": "A composable, themeable and customizable sidebar component.",
+            "files": [
+                {
+                    "path": "src/registry/default/ui/sidebar.tsx",
+                    "type": "registry:ui"
+                }
+            ],
+            "dependencies": ["@radix-ui/react-slot", "lucide-react"]
+        },
+        {
+            "name": "skeleton",
+            "type": "registry:ui",
+            "title": "Skeleton",
+            "description": "Use to show a placeholder while content is loading.",
+            "files": [
+                {
+                    "path": "src/registry/default/ui/skeleton.tsx",
+                    "type": "registry:ui"
+                }
+            ],
+            "dependencies": []
+        },
+        {
+            "name": "slider",
+            "type": "registry:ui",
+            "title": "Slider",
+            "description": "An input where the user selects a value from within a given range.",
+            "files": [
+                {
+                    "path": "src/registry/default/ui/slider.tsx",
+                    "type": "registry:ui"
+                }
+            ],
+            "dependencies": ["@radix-ui/react-slider"]
+        },
+        {
+            "name": "sonner",
+            "type": "registry:ui",
+            "title": "Sonner",
+            "description": "An opinionated toast component for React.",
+            "files": [
+                {
+                    "path": "src/registry/default/ui/sonner.tsx",
+                    "type": "registry:ui"
+                }
+            ],
+            "dependencies": ["sonner", "next-themes"]
+        },
+        {
+            "name": "switch",
+            "type": "registry:ui",
+            "title": "Switch",
+            "description": "A control that allows the user to toggle between checked and not checked.",
+            "files": [
+                {
+                    "path": "src/registry/default/ui/switch.tsx",
+                    "type": "registry:ui"
+                }
+            ],
+            "dependencies": ["@radix-ui/react-switch"]
+        },
+        {
+            "name": "table",
+            "type": "registry:ui",
+            "title": "Table",
+            "description": "A responsive table component.",
+            "files": [
+                {
+                    "path": "src/registry/default/ui/table.tsx",
+                    "type": "registry:ui"
+                }
+            ],
+            "dependencies": []
+        },
+        {
+            "name": "tabs",
+            "type": "registry:ui",
+            "title": "Tabs",
+            "description": "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
+            "files": [
+                {
+                    "path": "src/registry/default/ui/tabs.tsx",
+                    "type": "registry:ui"
+                }
+            ],
+            "dependencies": ["@radix-ui/react-tabs"]
+        },
+        {
+            "name": "textarea",
+            "type": "registry:ui",
+            "title": "Textarea",
+            "description": "Displays a form textarea or a component that looks like a textarea.",
+            "files": [
+                {
+                    "path": "src/registry/default/ui/textarea.tsx",
+                    "type": "registry:ui"
+                }
+            ],
+            "dependencies": []
+        },
+        {
+            "name": "toast",
+            "type": "registry:ui",
+            "title": "Toast",
+            "description": "A succinct message that is displayed temporarily.",
+            "files": [
+                {
+                    "path": "src/registry/default/ui/toast.tsx",
+                    "type": "registry:ui"
+                }
+            ],
+            "dependencies": ["@radix-ui/react-toast", "lucide-react"]
+        },
+        {
+            "name": "toaster",
+            "type": "registry:ui",
+            "title": "Toaster",
+            "description": "Toast notifications provider.",
+            "files": [
+                {
+                    "path": "src/registry/default/ui/toaster.tsx",
+                    "type": "registry:ui"
+                }
+            ],
+            "dependencies": []
+        },
+        {
+            "name": "toggle",
+            "type": "registry:ui",
+            "title": "Toggle",
+            "description": "A two-state button that can be either on or off.",
+            "files": [
+                {
+                    "path": "src/registry/default/ui/toggle.tsx",
+                    "type": "registry:ui"
+                }
+            ],
+            "dependencies": ["@radix-ui/react-toggle"]
+        },
+        {
+            "name": "toggle-group",
+            "type": "registry:ui",
+            "title": "Toggle Group",
+            "description": "A set of two-state buttons that can be toggled on or off.",
+            "files": [
+                {
+                    "path": "src/registry/default/ui/toggle-group.tsx",
+                    "type": "registry:ui"
+                }
+            ],
+            "dependencies": ["@radix-ui/react-toggle-group"]
+        },
+        {
+            "name": "tooltip",
+            "type": "registry:ui",
+            "title": "Tooltip",
+            "description": "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
+            "files": [
+                {
+                    "path": "src/registry/default/ui/tooltip.tsx",
+                    "type": "registry:ui"
+                }
+            ],
+            "dependencies": ["@radix-ui/react-tooltip"]
+        },
+        {
+            "name": "use-toast",
+            "type": "registry:ui",
+            "title": "use-toast",
+            "description": "Hook for toast notifications.",
+            "files": [
+                {
+                    "path": "src/registry/default/ui/use-toast.ts",
+                    "type": "registry:ui"
+                }
+            ],
+            "dependencies": []
+        }
+    ]
+}
